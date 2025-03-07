@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+scikit-learn
+nltk
+pandas
+python-docx
+seaborn
+matplotlib
