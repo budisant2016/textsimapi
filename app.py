@@ -320,5 +320,3 @@ async def analyze_mixed(
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error dalam proses analisis: {str(e)}")
         
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=10000)
