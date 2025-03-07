@@ -31,7 +31,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # Set NLTK data path untuk HuggingFace Space
 nltk_data_path = os.path.join(os.getcwd(), "nltk_data")
 if not os.path.exists(nltk_data_path):
