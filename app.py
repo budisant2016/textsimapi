@@ -19,6 +19,7 @@ import json
 import io
 import matplotlib.pyplot as plt
 import seaborn as sns
+import uvicorn
 
 # Inisialisasi FastAPI
 app = FastAPI(title="Document Similarity API")
@@ -318,3 +319,6 @@ async def analyze_mixed(
         raise HTTPException(status_code=400, detail="Data teks tidak valid (format JSON)")
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error dalam proses analisis: {str(e)}")
+        
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=10000)
